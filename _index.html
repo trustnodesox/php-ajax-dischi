@@ -9,11 +9,12 @@
 </head>
 <body>
   <div class="container" id="root">
-    <div class="" v-for="disco in dischi">
+    <p>aaaaa</p>
+    <div class="card" v-for="disco in dischi">
       <img :src="disco.poster" alt="">
       <p>{{disco.title}}</p>
       <p>{{disco.author}}</p>
-      <span>{{disco.year}}</span> - <span>{{disco.genre}}</span>
+      <span>{{disco.year}}</span>
     </div>
   </div>
 

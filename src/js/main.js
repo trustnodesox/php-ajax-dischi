@@ -6,10 +6,10 @@ var app = new Vue({
     dischi: [],
   },
   mounted(){
-    axios.get("./call.php")
+    console.log('ciao');
+    axios.get("http://localhost/php-ajax-dischi/call.php")
     .then((response) => {
       this.dischi = response.data;
-      //console.log(this.dischi);
     });
   }
 })
