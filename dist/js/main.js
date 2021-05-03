@@ -16,9 +16,8 @@ var app = new Vue({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get("http://localhost/php-ajax-dischi/call.php").then(function (response) {
-      _this.dischi = response.data;
-      console.log(_this.dischi);
+    axios.get("./call.php").then(function (response) {
+      _this.dischi = response.data; //console.log(this.dischi);
     });
   }
 });
